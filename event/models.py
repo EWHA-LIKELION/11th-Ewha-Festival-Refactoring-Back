@@ -89,7 +89,7 @@ class Menu(TimeStamp):
     like = models.ManyToManyField(User, related_name='menus', blank=True)
 
     def __str__(self):
-        return self.name
+        #return self.name
         return "{} - {}".format(self.menu,self.event.name)
 
 class Comment(TimeStamp):
